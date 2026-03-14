@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>OSSKANSA Report System</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<script>
+
+document.querySelectorAll("a").forEach(link => {
+
+link.addEventListener("click", function(e){
+
+const href = this.getAttribute("href")
+
+if(href && !href.startsWith("#")){
+
+e.preventDefault()
+
+document.body.classList.add("fade-out")
+
+setTimeout(() => {
+window.location.href = href
+},300)
+
+}
+
+})
+
+})
+
+</script>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+Hallo Sobat OSSKANSA
+<span class="sub">Laporkan Masalah Sekolah dengan Aman</span>
+</div>
+
+<div class="menu">
+<a href="index.html">Beranda</a>
+<a href="tentang.html">Tentang</a>
+<a href="login.html">Admin</a>
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>OSSKANSA Report System</h1>
+
+<p>
+Sistem pelaporan digital untuk membantu siswa melaporkan
+masalah di lingkungan sekolah dengan cepat, aman, dan mudah.
+</p>
+
+<a href="laporan.html">
+<button class="btn-primary">Kirim Laporan</button>
+</a>
+
+</div>
+
+<div class="hero-img">
+
+<img src="https://cdn-icons-png.flaticon.com/512/1048/1048949.png">
+
+</div>
+
+</section>
+
+
+<!-- FITUR -->
+
+<section class="fitur">
+
+<h2>Fitur Sistem</h2>
+
+<div class="fitur-grid">
+
+<div class="fitur-card">
+<div class="icon">📝</div>
+<h3>Kirim Laporan</h3>
+<p>Kirim laporan dengan mudah melalui sistem online.</p>
+</div>
+
+<div class="fitur-card">
+<div class="icon">🔒</div>
+<h3>Privasi Aman</h3>
+<p>Identitas pelapor dapat dirahasiakan.</p>
+</div>
+
+<div class="fitur-card">
+<div class="icon">📊</div>
+<h3>Dashboard Admin</h3>
+<p>Admin dapat memantau laporan secara realtime.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 OSSKANSA Report System</p>
+
+</footer>
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+const navbar = document.querySelector(".navbar")
+
+if(window.scrollY > 20){
+
+navbar.classList.add("scrolled")
+
+}else{
+
+navbar.classList.remove("scrolled")
+
+}
+
+})
+
+</script>
+
+</body>
+</html>

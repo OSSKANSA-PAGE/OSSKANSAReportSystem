@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>OSSKANSA Report System</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<script>
+
+document.querySelectorAll("a").forEach(link => {
+
+link.addEventListener("click", function(e){
+
+const href = this.getAttribute("href")
+
+if(href && !href.startsWith("#")){
+
+e.preventDefault()
+
+document.body.classList.add("fade-out")
+
+setTimeout(() => {
+window.location.href = href
+},300)
+
+}
+
+})
+
+})
+
+</script>
+<body>
+
+<nav class="navbar">
+
+<div class="logo">OSSKANSA</div>
+
+<div class="menu">
+<a href="index.html">Beranda</a>
+<a href="tentang.html">Tentang</a>
+<a href="login.html">Admin</a>
+</div>
+
+</nav>
+
+
+<section class="tentang">
+
+<h1>Tentang OSSKANSA Report System</h1>
+
+<p>
+OSSKANSA Report System adalah sistem pelaporan digital
+yang dibuat untuk membantu siswa melaporkan masalah
+di lingkungan sekolah secara mudah dan cepat.
+</p>
+
+<p>
+Melalui sistem ini, siswa dapat mengirim laporan
+tanpa harus datang langsung ke kantor sekolah.
+Admin kemudian akan memverifikasi dan memproses
+laporan yang masuk.
+</p>
+
+<h2>Tujuan Sistem</h2>
+
+<ul>
+<li>Membantu siswa menyampaikan laporan dengan mudah</li>
+<li>Meningkatkan keamanan dan kenyamanan sekolah</li>
+<li>Mempermudah admin memantau laporan</li>
+</ul>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 OSSKANSA Report System</p>
+
+</footer>
+
+</body>
+</html>
