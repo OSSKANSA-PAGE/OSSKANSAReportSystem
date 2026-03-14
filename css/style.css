@@ -736,3 +736,66 @@ background: linear-gradient(90deg,#2563eb,#60a5fa);
 background-clip:text;
 -webkit-text-fill-color:transparent;
 }
+
+/* CONTAINER */
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+/* HERO SECTION */
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+padding:50px 0;
+flex-wrap:wrap;
+}
+
+/* FEATURES / CARD */
+.features{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:250px;
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+background:#1f2a44;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.features{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:90%;
+}
+
+}
